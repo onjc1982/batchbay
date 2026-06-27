@@ -2,7 +2,7 @@ services:
   - type: web
     name: batchbay
     env: node
-    buildCommand: cd client && npm install && npx vite build
+    buildCommand: npm run install:all && cd client && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
